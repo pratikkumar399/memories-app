@@ -32,15 +32,15 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#fff0f6', // Soft pink background for the romantic vibe
+    backgroundColor: '#fff0f6',
   },
   welcomeText: {
     fontSize: 30,
-    fontFamily: 'SpaceMono', 
-    color: '#ff4d5a', 
+    fontFamily: 'SpaceMono',
+    color: '#ff4d5a',
     marginBottom: 20,
-    textShadowOffset: { width: 2, height: 2 }, 
-    textShadowRadius: 3, 
+    textShadowOffset: { width: 2, height: 2 },
+    textShadowRadius: 3,
   },
   buttonContainer: {
     position: 'absolute',
@@ -62,6 +62,6 @@ const styles = StyleSheet.create({
   buttonText: {
     color: '#fff',
     fontSize: 18,
-    fontFamily: 'SpaceMono', 
+    fontFamily: 'SpaceMono',
   },
 });
