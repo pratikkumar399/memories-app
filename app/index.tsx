@@ -1,29 +1,17 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, Alert, StatusBar } from 'react-native';
-import { useNavigation } from 'expo-router';
+import { useRouter } from 'expo-router';
 
-export default function index() {
-  const navigation = useNavigation();
-
-  const handleButtonPress = () => {
-    // You can navigate to the next screen or show an alert here
-    Alert.alert('Button Pressed', 'Let\'s go inside!');
-    // If you have a "Take me in" screen, you can navigate like this:
-    // navigation.navigate('TakeMeIn');
-  };
+export default function HomeScreen() {
+  const router = useRouter();
 
   return (
-    <>
-      <StatusBar barStyle="dark-content" backgroundColor="#fff0f6" />
-      <View style={styles.container}>
-        <Text style={styles.welcomeText}>Welcome Baby ❤️</Text>
-        <View style={styles.buttonContainer}>
-          <TouchableOpacity style={styles.button} onPress={handleButtonPress}>
-            <Text style={styles.buttonText}>Take me in</Text>
-          </TouchableOpacity>
-        </View>
-      </View>
-    </>
+    <View style={styles.container}>
+      <Text style={styles.welcomeText}>Welcome Baby ❤️</Text>
+      <TouchableOpacity style={styles.button} onPress={() => router.push("./memories")}>
+        <Text style={styles.buttonText}>Take me in</Text>
+      </TouchableOpacity>
+    </View>
   );
 }
 
