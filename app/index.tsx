@@ -8,7 +8,7 @@ export default function HomeScreen() {
   return (
     <View style={styles.container}>
       <Text style={styles.welcomeText}>Welcome Baby ❤️</Text>
-      <TouchableOpacity style={styles.button} onPress={() => router.push("./memories")}>
+      <TouchableOpacity style={styles.button} onPress={() => router.push("./memory/memories")}>
         <Text style={styles.buttonText}>Take me in</Text>
       </TouchableOpacity>
     </View>
